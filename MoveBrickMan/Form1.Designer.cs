@@ -28,20 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.BtConfirm = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtReset = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.BtCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
+            // 
+            // BtConfirm
+            // 
+            this.BtConfirm.Location = new System.Drawing.Point(50, 182);
+            this.BtConfirm.Name = "BtConfirm";
+            this.BtConfirm.Size = new System.Drawing.Size(75, 23);
+            this.BtConfirm.TabIndex = 0;
+            this.BtConfirm.Text = "button1";
+            this.BtConfirm.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(169, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(174, 20);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(68, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(169, 74);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(174, 21);
+            this.textBox1.TabIndex = 4;
+            // 
+            // BtReset
+            // 
+            this.BtReset.Location = new System.Drawing.Point(160, 182);
+            this.BtReset.Name = "BtReset";
+            this.BtReset.Size = new System.Drawing.Size(75, 23);
+            this.BtReset.TabIndex = 5;
+            this.BtReset.Text = "button2";
+            this.BtReset.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(68, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "label3";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(169, 113);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(174, 21);
+            this.textBox2.TabIndex = 7;
+            // 
+            // BtCancel
+            // 
+            this.BtCancel.Location = new System.Drawing.Point(268, 182);
+            this.BtCancel.Name = "BtCancel";
+            this.BtCancel.Size = new System.Drawing.Size(75, 23);
+            this.BtCancel.TabIndex = 8;
+            this.BtCancel.Text = "button3";
+            this.BtCancel.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(384, 262);
+            this.Controls.Add(this.BtCancel);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.BtReset);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.BtConfirm);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Button BtConfirm;
+        public System.Windows.Forms.Button BtReset;
+        public System.Windows.Forms.Button BtCancel;
     }
 }
 
