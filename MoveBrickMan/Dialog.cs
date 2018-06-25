@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MoveBrickMan
 {
-    public partial class Form1 : Form
+    public partial class Dialog : Form
     {
-        public Form1()
+        public Dialog()
         {
             InitializeComponent();
             ControlProperty.Form1CP(this);

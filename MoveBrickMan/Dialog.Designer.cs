@@ -1,6 +1,6 @@
 ﻿namespace MoveBrickMan
 {
-    partial class Form1
+    partial class Dialog
     {
         /// <summary>
         /// 必需的设计器变量。

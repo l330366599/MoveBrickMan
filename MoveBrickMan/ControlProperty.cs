@@ -8,7 +8,7 @@ namespace MoveBrickMan
 {
     class ControlProperty
     {
-        public static void Form1CP (Form1 f1)
+        public static void Form1CP (Dialog f1)
         {
             f1.label1.Text = "所属类别:";
             f1.label2.Text = "金    额:";
