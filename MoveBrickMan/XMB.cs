@@ -16,5 +16,18 @@ namespace MoveBrickMan
         {
             InitializeComponent();
         }
+
+        private void XMB_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void MSAccounting_Click(object sender, EventArgs e)
+        {
+            Accounting ACC = new Accounting();
+            ACC.MdiParent = this;
+            ACC.Show();
+            ACC.Dock = DockStyle.Fill;
+        }
     }
 }
