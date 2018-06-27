@@ -12,22 +12,28 @@ namespace MoveBrickMan
 {
     public partial class XMB : Form
     {
+
         public XMB()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
-        private void XMB_Load(object sender, EventArgs e)
-        {
-          
-        }
+
 
         private void MSAccounting_Click(object sender, EventArgs e)
         {
             Accounting ACC = new Accounting();
             ACC.MdiParent = this;
-            ACC.Show();
-            ACC.Dock = DockStyle.Fill;
+            ACC.Show();            
+            ACC.Dock = DockStyle.Fill;                      //Accounting窗体自适应父窗体;
+        }
+
+        private void XMB_LocationChanged(object sender, EventArgs e)
+        {            
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint |
+                          ControlStyles.AllPaintingInWmPaint,
+                          true);
+            this.UpdateStyles();
         }
     }
 }
