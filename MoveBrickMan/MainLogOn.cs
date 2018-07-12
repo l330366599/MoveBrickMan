@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace MoveBrickMan
 {
-    public partial class Accounting : Form
+    public partial class MainLogOn : Form
     {
-        public Accounting()
+        public MainLogOn()
         {
             InitializeComponent();
-            DtpPre.Value = DateTime.Now.AddDays(1 - DateTime.Now.Day);
-            DtpPostf.Value = DateTime.Now;
         }
     }
 }
